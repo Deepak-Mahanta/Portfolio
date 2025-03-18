@@ -269,21 +269,21 @@ header {
 .header-social a {
   position: relative;
   background: var(--color-gray-100);
-   color: var(--color-primary);
-   width: 2.2rem;
-   aspect-ratio: 1/1;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 0.6rem;
-   transition: var(--transition);
+  color: var(--color-primary);
+  width: 2.2rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  transition: var(--transition);
 }
 
 .header-social a::after {
   content: attr(title);
   position: absolute;
   width: 100px;
-  background-color:var(--color-primary);
+  background-color: var(--color-primary);
   color: #fff;
   text-align: center;
   border-radius: 5px;
@@ -338,10 +338,15 @@ header {
 .resume-right > p {
   margin-bottom: 1.5rem;
 }
+
+/* Experience Section */
 .resume-right ul {
   display: grid;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 4fr 3fr; */
+  grid-template-columns: 1fr;
+  margin-bottom: 0.5rem;
+  /* background-color: red; */
 }
 .resume-right ul li {
   background: var(--color-gray-0);
@@ -372,7 +377,7 @@ header {
 /* skills */
 .resume-right.skills ul {
   grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  gap: 1rem;
 }
 .resume-right.skills ul li {
   padding: 1rem;

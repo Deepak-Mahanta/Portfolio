@@ -19,15 +19,19 @@ const resumeRight = document.querySelector(".resume-right");
 const experienceContent = `
 <h4>Experience</h4>
            <p>Here, you will find more information about my internships.</p>
-          <ul>
-           
-            
-           
+          <ul>           
             <li>
               <h6>Jun 2024 – Apr 2024</h6>
               <h5>Full Stack Web Development Intern</h5>
-              <p>Business Web Solution</p> 
+              <p>Business Web Solution</p>             
               
+            </li>
+          </ul>
+          <ul>           
+            <li>
+              <h6>Dec 2022 – Feb 2023</h6>
+              <h5>Cyber security virtual internship program</h5>
+              <p>EduSkills Foundation · Internship</p>             
               
             </li>
           </ul>
@@ -163,16 +167,16 @@ document.body.className = bodyClass;
 
 // /contact form
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent default form submission
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
 
-  // Optionally, perform your form submission here (via AJAX, etc.)
-  
-  // Submit the form
-  this.submit(); // Submits the form with data
+    // Optionally, perform your form submission here (via AJAX, etc.)
 
-  // After submission, clear the form fields
-  this.reset(); // This will clear all the input fields
-});
+    // Submit the form
+    this.submit(); // Submits the form with data
 
-
+    // After submission, clear the form fields
+    this.reset(); // This will clear all the input fields
+  });
